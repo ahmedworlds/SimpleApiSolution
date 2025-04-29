@@ -36,5 +36,4 @@ C:\Projects.Testing\SimpleApiSolution\SimpleApi\obj\Debug\net8.0\ref\SimpleApi.d
 C:\Projects.Testing\SimpleApiSolution\SimpleApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Projects.Testing\SimpleApiSolution\SimpleApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Projects.Testing\SimpleApiSolution\SimpleApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Projects.Testing\SimpleApiSolution\SimpleApi\obj\Debug\net8.0\SimpleApi.RazorAssemblyInfo.cache
-C:\Projects.Testing\SimpleApiSolution\SimpleApi\obj\Debug\net8.0\SimpleApi.RazorAssemblyInfo.cs
+C:\Projects.Testing\SimpleApiSolution\SimpleApi\obj\Debug\net8.0\SimpleApi.sourcelink.json

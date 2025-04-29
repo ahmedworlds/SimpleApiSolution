@@ -47,7 +47,6 @@ SimpleApiSolution
 
 2. Run the client application:
    ```
-   cd C:\Projects.Testing\SimpleApiSolution\SimpleApi
    dotnet watch run
    ```
 
