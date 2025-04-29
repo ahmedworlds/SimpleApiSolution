@@ -32,13 +32,22 @@ namespace SimpleApi.Controllers
 
 
 
-        [HttpGet("Sum")]
-        public IActionResult GetSum(int a, int b)
+
+        [HttpPost("Sum")]
+        public IActionResult GetSum([FromForm, FromQuery] int a, [FromForm, FromQuery] int b)
         {
             var sum = a + b;
             return Ok(new{result = sum});
         }
 
+
+
+        [HttpPost("Multiply")]
+        public IActionResult GetMultiply([FromForm, FromQuery] int a, [FromForm, FromQuery] int b)
+        {
+            var multiply = a * b;
+            return Ok(new{result = multiply});
+        }
 
 
     }

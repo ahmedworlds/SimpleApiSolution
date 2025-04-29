@@ -17,7 +17,7 @@
                     const a = $('#a').val();
                     const b = $('#b').val();
 
-                    $.post('http://localhost:5000/Services/Multiply', { a: a, b: b })
+                    $.post('http://localhost:5000/api/v2/Services/Multiply', { a: a, b: b })
                         .done(function (data) {
                             $('#result').text(data.result);
                         })
