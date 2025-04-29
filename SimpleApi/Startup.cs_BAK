@@ -1,0 +1,72 @@
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Versioning;
+using Microsoft.OpenApi.Models;
+using System.Linq;
+
+public class Startup
+{
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.AddControllers();
+
+        services.AddCors(options =>
+        {
+            options.AddDefaultPolicy(builder =>
+            {
+                builder.AllowAnyOrigin()
+                        .AllowAnyMethod()
+                        .AllowAnyHeader();
+            });
+        });
+
+
+        services.AddApiVersioning(options =>
+        {
+            options.DefaultApiVersion = new ApiVersion(1, 0);
+            options.AssumeDefaultVersionWhenUnspecified = true;
+            options.ReportApiVersions = true;
+        });
+
+
+
+
+
+    }
+
+
+
+
+
+    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+    {
+        if (env.IsDevelopment())
+        {
+            app.UseDeveloperExceptionPage();
+        }
+
+        app.UseCors();
+
+        // app.UseSwagger();
+
+        // app.UseSwaggerUI(c =>
+        // {
+        //     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Simple API V1");
+        //     c.SwaggerEndpoint("/swagger/v2/swagger.json", "Simple API V2");
+        // });
+
+        app.UseRouting();
+
+        app.UseEndpoints(endpoints =>
+        {
+            endpoints.MapControllers();
+        });
+
+    }
+}
+
+
+

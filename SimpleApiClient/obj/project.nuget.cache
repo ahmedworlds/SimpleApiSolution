@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "wAPEJ88YWtk=",
+  "success": true,
+  "projectFilePath": "C:\\Projects.Testing\\SimpleApiSolution\\SimpleApiClient\\SimpleApiClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sam\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\5.1.0\\microsoft.aspnetcore.mvc.versioning.5.1.0.nupkg.sha512",
+    "C:\\Users\\Sam\\.nuget\\packages\\system.net.http.json\\8.0.0\\system.net.http.json.8.0.0.nupkg.sha512",
+    "C:\\Users\\Sam\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\Sam\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

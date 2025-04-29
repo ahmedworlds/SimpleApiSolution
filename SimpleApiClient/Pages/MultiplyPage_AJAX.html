@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <h1>Multiply Two Numbers</h1>
+        <input id="a" placeholder="Enter number a" value="3">
+        <br>
+        <input id="b" placeholder="Enter number b" value="4">
+        <br>
+        <button onclick="multiply()">Multiply</button>
+        <h2>Result: <span id="result">N/A</span></h2>
+
+
+        <script>
+            async function multiply() {
+                var a = document.getElementById('a').value;
+                var b = document.getElementById('b').value;
+
+                var response = await fetch('http://localhost:5000/Services/Multiply', 
+                {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: `a=${a}&b=${b}`
+                }
+                );
+
+                var result = await response.json();
+                document.getElementById('result').textContent = result.result || 'Error';
+            }
+        </script>
+
+    </body>
+</html>

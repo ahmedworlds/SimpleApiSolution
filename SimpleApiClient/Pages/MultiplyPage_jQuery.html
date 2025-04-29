@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <h1>Multiply Two Numbers</h1>
+        <input id="a" placeholder="Enter number a" value="3">
+        <br>
+        <input id="b" placeholder="Enter number b" value="4">
+        <br>
+        <button id="multiplyButton">Multiply</button>
+        <h2>Result: <span id="result">N/A</span></h2>
+
+        <script>
+            $(document).ready(function () {
+                $('#multiplyButton').click(function () {
+                    const a = $('#a').val();
+                    const b = $('#b').val();
+
+                    $.post('http://localhost:5000/Services/Multiply', { a: a, b: b })
+                        .done(function (data) {
+                            $('#result').text(data.result);
+                        })
+                        .fail(function () {
+                            $('#result').text('Error');
+                        });
+                });
+            });
+        </script>
+
+        
+    </body>
+</html>

@@ -1,0 +1,129 @@
+using System;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Versioning;
+
+namespace SimpleApi.Controllers
+{
+
+
+    [ApiController]
+    [Route("api/v{version:apiVersion}/Services")]
+    [ApiVersion("1.0")]
+    [ApiVersion("2.0")]
+    public class ServicesController : ControllerBase
+    {
+        // [HttpGet]
+        // public IActionResult ServiceInfo()
+        // {
+        //     return Ok("Service is running");
+        // }
+
+        [HttpGet("RandomNumber")]
+        [MapToApiVersion("1.0")]
+        public IActionResult GetRandomNumberV1()
+        {
+            return Ok(new{ result = new Random().Next(1, 1000) });
+        }
+
+        [HttpGet("RandomNumber")]
+        [MapToApiVersion("2.0")]
+        public IActionResult GetRandomNumberV2()
+        {
+            return Ok(new{ result = new Random().Next(1, 1000) });
+        }
+
+
+    }
+
+    // [ApiController]
+    // [Route("api/v1/Services")]
+    // public class ServicesController : ControllerBase
+    // {
+
+    //     [HttpGet]
+    //     public IActionResult ServiceInfo()
+    //     {
+    //         return Ok("Service is running");
+    //     }
+
+    //     [HttpGet("RandomNumber")]
+    //     public IActionResult GetRandomNumber()
+    //     {
+    //         var random = new Random();
+    //         var randomNumber = random.Next(1, 1000);
+    //         return Ok(new { result = randomNumber });
+    //     }
+
+    //     // [HttpGet("Sum")]
+    //     // public IActionResult GetSum(int a, int b)
+    //     // {
+    //     //     var sum = a + b;
+    //     //     return Ok(new{result = sum});
+    //     // }
+
+    //     // [HttpPost("Multiply")]
+    //     // public IActionResult GetMultiply([FromForm] int a, [FromForm] int b)
+    //     // {
+    //     //     var product = a * b;
+    //     //     return Ok(new { result = product });
+    //     // }
+
+    // }
+
+
+
+
+
+
+
+
+
+
+    // [ApiController]
+    // [Route("api/v2/Services")]
+    // public class ServicesV2Controller : ControllerBase
+    // {
+    //     [HttpGet("RandomNumber")]
+    //     public IActionResult GetRandomNumber()
+    //     {
+    //         return Ok( new { result = new Random().Next(1, 1000) } );
+    //     }
+    // }
+
+
+
+
+
+
+    // [ApiController]
+    // [Route("api/v{version:apiVersion}/[controller]")]
+    // public class ServicesV2Controller : ControllerBase
+    // {
+    //     [HttpGet("RandomNumber")]
+    //     public IActionResult GetRandomNumber()
+    //     {
+    //         var random = new Random();
+    //         var randomNumber = random.Next(1, 1000);
+    //         return Ok(new { result = randomNumber });
+    //     }
+
+    //     [HttpGet("Sum")]
+    //     public IActionResult GetSum(int a, int b)
+    //     {
+    //         var sum = a + b;
+    //         return Ok(new { result = sum });
+    //     }
+
+    //     [HttpPost("Multiply")]
+    //     public IActionResult GetMultiply([FromForm] int a, [FromForm] int b)
+    //     {
+    //         var product = a * b;
+    //         return Ok(new { result = product });
+    //     }
+
+    // }
+
+
+
+
+}

@@ -1,0 +1,9 @@
+
+### Get Random Number
+GET http://localhost:5000/api/v1/Services/RandomNumber
+
+
+
+
+### Get Weather Data
+GET http://localhost:5000/weather

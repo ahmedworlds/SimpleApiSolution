@@ -1,0 +1,14 @@
+C:\Projects.Testing\SimpleApiSolution\SimpleApiClient\bin\Debug\net8.0\SimpleApiClient.exe
+C:\Projects.Testing\SimpleApiSolution\SimpleApiClient\bin\Debug\net8.0\SimpleApiClient.deps.json
+C:\Projects.Testing\SimpleApiSolution\SimpleApiClient\bin\Debug\net8.0\SimpleApiClient.runtimeconfig.json
+C:\Projects.Testing\SimpleApiSolution\SimpleApiClient\bin\Debug\net8.0\SimpleApiClient.dll
+C:\Projects.Testing\SimpleApiSolution\SimpleApiClient\bin\Debug\net8.0\SimpleApiClient.pdb
+C:\Projects.Testing\SimpleApiSolution\SimpleApiClient\obj\Debug\net8.0\SimpleApiClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects.Testing\SimpleApiSolution\SimpleApiClient\obj\Debug\net8.0\SimpleApiClient.AssemblyInfoInputs.cache
+C:\Projects.Testing\SimpleApiSolution\SimpleApiClient\obj\Debug\net8.0\SimpleApiClient.AssemblyInfo.cs
+C:\Projects.Testing\SimpleApiSolution\SimpleApiClient\obj\Debug\net8.0\SimpleApiClient.csproj.CoreCompileInputs.cache
+C:\Projects.Testing\SimpleApiSolution\SimpleApiClient\obj\Debug\net8.0\SimpleApiClient.dll
+C:\Projects.Testing\SimpleApiSolution\SimpleApiClient\obj\Debug\net8.0\refint\SimpleApiClient.dll
+C:\Projects.Testing\SimpleApiSolution\SimpleApiClient\obj\Debug\net8.0\SimpleApiClient.pdb
+C:\Projects.Testing\SimpleApiSolution\SimpleApiClient\obj\Debug\net8.0\SimpleApiClient.genruntimeconfig.cache
+C:\Projects.Testing\SimpleApiSolution\SimpleApiClient\obj\Debug\net8.0\ref\SimpleApiClient.dll
